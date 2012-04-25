@@ -3,8 +3,8 @@ $total = 100.00; //Total do carrinho do cliente
 
 $nvp = array(
 	'PAYMENTREQUEST_0_AMT'				=> $total,
-	'PAYMENTREQUEST_0_CURRENCYCODE'		=> 'BRL',
-	'PAYMENTREQUEST_0_PAYMENTACTION'	=> 'Sale',
+	'PAYMENTREQUEST_0_CURRENCYCODE'		 => 'BRL',
+	'PAYMENTREQUEST_0_PAYMENTACTION'	 => 'Sale',
 	'RETURNURL'							=> 'http://127.0.0.1/paypal/retorno.php',
 	'CANCELURL'							=> 'http://127.0.0.1/paypal/cancelamento.php',
 	'METHOD'							=> 'SetExpressCheckout',
