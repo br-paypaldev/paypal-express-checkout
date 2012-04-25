@@ -16,7 +16,7 @@ $nvp = array(
 
 $curl = curl_init();
 
-curl_setopt( $curl , CURLOPT_URL , 'https://api-3t.sandbox.paypal.com/nvp' );
+curl_setopt( $curl , CURLOPT_URL , 'https://api-3t.paypal.com/nvp' ); //Link para ambiente de teste: https://api-3t.sandbox.paypal.com/nvp
 curl_setopt( $curl , CURLOPT_SSL_VERIFYPEER , false );
 curl_setopt( $curl , CURLOPT_RETURNTRANSFER , 1 );
 curl_setopt( $curl , CURLOPT_POST , 1 );
