@@ -3,12 +3,12 @@ $total = 100.00; //Total do carrinho do cliente
 
 $nvp = array(
 	'PAYMENTREQUEST_0_AMT'				=> $total,
-	'PAYMENTREQUEST_0_CURRENCYCODE'		=> 'BRL',
-	'PAYMENTREQUEST_0_PAYMENTACTION'	=> 'Sale',
+	'PAYMENTREQUEST_0_CURRENCYCODE'		 => 'BRL',
+	'PAYMENTREQUEST_0_PAYMENTACTION'	 => 'Sale',
 	'RETURNURL'							=> 'http://127.0.0.1/paypal/retorno.php',
 	'CANCELURL'							=> 'http://127.0.0.1/paypal/cancelamento.php',
 	'METHOD'							=> 'SetExpressCheckout',
-	'VERSION'							=> '64',
+	'VERSION'							=> '84',
 	'PWD'								=> 'xxxx',
 	'USER'								=> 'vendedor@dominio.com',
 	'SIGNATURE'							=> 'ASSINATURA'
@@ -16,7 +16,7 @@ $nvp = array(
 
 $curl = curl_init();
 
-curl_setopt( $curl , CURLOPT_URL , 'https://api-3t.sandbox.paypal.com/nvp' );
+curl_setopt( $curl , CURLOPT_URL , 'https://api-3t.paypal.com/nvp' ); //Link para ambiente de teste: https://api-3t.sandbox.paypal.com/nvp
 curl_setopt( $curl , CURLOPT_SSL_VERIFYPEER , false );
 curl_setopt( $curl , CURLOPT_RETURNTRANSFER , 1 );
 curl_setopt( $curl , CURLOPT_POST , 1 );
