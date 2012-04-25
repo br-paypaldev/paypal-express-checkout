@@ -7,7 +7,7 @@ if ( isset( $_GET[ 'token' ] ) ) {
 	$nvp = array(
 		'TOKEN'								=> $token,
 		'METHOD'							=> 'GetExpressCheckoutDetails',
-		'VERSION'							=> '64',
+		'VERSION'							=> '84',
 		'PWD'								=> 'xxxx',
 		'USER'								=> 'vendedor@dominio.com',
 		'SIGNATURE'							=> 'ASSINATURA'
